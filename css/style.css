@@ -1,0 +1,495 @@
+@import "reset.css";
+
+/* Reset settings done */
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+body,html {
+    font-family: 'Arsenal', sans-serif;
+    background: #e5e5e5;
+    
+}
+
+
+/* header */
+
+.header {
+    background: linear-gradient(180deg, #FFFFFF 2.07%, rgba(255, 255, 255, 0.32) 75.02%);
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    /* height: 100vh; */
+    position: relative;
+}    
+
+#mask {
+    background: url(demo.png) no-repeat 0 0 transparent;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#mask::after {
+    background: transparent;
+    background: -moz-linear-gradient(top, rgb(255, 255, 255) 2.07%, rgba(255, 255, 255, 0.32) 95%);
+    background: -webkit-gradient(left top, left bottom, color-stop(2.07%, rgb(255, 255, 255)), color-stop(95%, rgba(255, 255, 255, 0.32)));
+    background: -webkit-linear-gradient(top, rga(255, 255, 25) 2.07%, rgba(255, 255, 255, 0.32) 95%);
+    background: -o-linear-gradient(top, rgb(255, 255, 255) 2.07%, rgba(255, 255, 255, 0.32) 95%);
+    background: -ms-linear-gradient(top, rgb(255, 255, 255) 2.07%, rgba(255, 255, 255, 0.32) 95%);
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 2.07%, rgba(255, 255, 255, 0.32) 95%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 2;
+}      
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin-left: 140px;
+}    
+
+.nav-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}    
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #FFBA40;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.25);
+    margin-right: 12px;
+}    
+
+.logo-text {
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    width: 135px;
+}    
+
+.logo-text2 {
+    width: 158px;
+}    
+
+.logo-text3 {
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+}    
+
+.nav-number {
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+}    
+
+.header-intro {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    padding-top: 140px;
+    padding-left: 52px;
+}    
+
+.intro-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-title {
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 53px;
+
+    color: #000000;
+    width: 80%;
+}    
+
+.header-btn {
+    /* display: flex; */
+    text-align: center;
+    /* width: 345px; */
+    border: none;
+    padding: 25px 65px;
+    background: linear-gradient(90deg, #985B22 0%, #E8964A 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    
+    font-family: Arsenal;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+
+    margin-top: 100px;
+    margin-bottom: 190px;
+}    
+
+.main-link {
+    color: #3c743e;
+}    
+
+.header-info {
+    margin-bottom: 30px;
+    width: 70%;
+
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.intro-right {
+    position: relative;
+}
+
+
+/* Main */
+
+.main {
+    padding-top: 60px;
+    padding-bottom: 200px;
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 43px;
+    margin-bottom: 43px;
+}
+
+.main-foto-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.lot {
+    width: 416px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.lot-bg1 {
+    background: url(../img/img1.png) no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.lot-bg2 {
+    background: url(../img/img2.png) no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.lot-bg3 {
+    background: url(../img/img3.png) no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.wh-rad {
+    display: block;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    margin: 20px;
+    width: 100%;
+    height: 88%;
+}
+
+.main-subtitle {
+    margin-top: 110px;
+    margin-bottom: 60px;
+
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 43px;
+}
+
+.stages {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stages-up {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stages-line {
+    width: 88px;
+    height: 2px;
+    background: #000;
+}
+
+.stages-circle {
+    background: linear-gradient(90deg, #CD8E1E 0%, #FFBA40 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    border-radius: 50%;
+}
+
+.stages-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.stages-text {
+    width: 20%;
+    text-align: center;
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.cost {
+    margin-top: 150px;
+    padding: 55px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 80%;
+    display: flex;
+    text-align: right;
+    flex-direction: row-reverse;
+    /* justify-content: end; */
+    align-items: center;
+    position: relative;
+}
+
+.cost-img {
+    position: absolute;
+    left: 165px;
+    z-index: 2;
+}
+
+.cost-text {
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 43px;
+    margin-right: 164px;
+}
+
+
+/* Footer */
+
+.footer {
+    padding-bottom: 116px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.author {
+    margin-bottom: 10px;
+}
+
+.footer-contacts {
+    align-items: center;
+}
+
+.number {
+    margin-bottom: 10px;
+}
+
+.policy::after {
+    content: "";
+    width: 212px;
+    height: 1px;
+    margin-top: 2px;
+    background: #000;
+    display: block;
+}
+
+.footer-block3 {
+    display: flex;
+    align-items: center;
+}
+
+.footer-name {
+    width: 144px;
+    margin-left: 20px;
+}
+
+
+/* popup */
+
+.wh-popup {
+    background: #e5e5e5;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background: #ffffff;
+    padding: 40px 65px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.popup-title {
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 43px;
+    width: 80%;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    align-items: center;
+}
+
+.popup-contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    justify-content: space-between;
+}
+
+.input-form {
+    background: #E8E8E8;
+    border-radius: 50px;
+
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+
+    width: 665px;
+    padding: 15px 60px;
+    border: none;
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+}
+
+.input-form:last-child {
+    margin-bottom: 0;
+}
+
+.form-requred {
+    border: none;
+    background: linear-gradient(90deg, #427D44 0%, #3DD641 96.1%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+
+    padding: 25px 68px;
+}
+
+.wh-popup .show {
+    display: flex;
+    align-items: center;
+    margin-top: 50%;
+}
